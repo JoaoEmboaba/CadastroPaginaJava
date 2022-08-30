@@ -1,9 +1,4 @@
-<%-- 
-    Document   : PostCadastro
-    Created on : 22 de ago. de 2022, 14:33:02
-    Author     : jvemboaba
---%>
-
+     
 <%@page import="Model.CadastroModel"%>
 <%@page import="Controller.CadastroController"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -19,13 +14,13 @@
 
         <%
             try {
-
+        
                 CadastroModel objModel = new CadastroModel();
                 CadastroController objController = new CadastroController();
                 objModel.setNome(request.getParameter("nome"));
                 objModel.setSenha(request.getParameter("senha"));
                 objController.cadastrarAluno(objModel);
-
+                
             } catch (Exception ex) {
                 throw new RuntimeException("Erro ao enviar formulário", ex);
             }

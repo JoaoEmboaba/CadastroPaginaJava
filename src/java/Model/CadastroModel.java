@@ -5,8 +5,7 @@ public class CadastroModel {
     private int id;
     private String nome, senha;
 
-    public CadastroModel() {
-    }
+    public CadastroModel() {}
 
     public CadastroModel(int id, String nome, String senha) {
         this.id = id;
@@ -14,8 +13,7 @@ public class CadastroModel {
         this.senha = senha;
     }
 
-    public void CadastroModel() {
-    }
+    public void CadastroModel() {}
 
     public int getId() {
         return id;
