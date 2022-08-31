@@ -5,6 +5,14 @@ body {
     overflow-y: scroll;
 }
 
+.span-required{
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    color:  rgba(230, 45, 45, 0.822);
+    display: none;
+}
+
 .margem{
 
     padding-left: 1rem;

@@ -1,7 +1,9 @@
+        const formulario = document.getElementById('form');
+        const campo = document.querySelectorAll('.required');
 
+        function validar() {
 
-function validar() {
-    
-    alert('Preencha os campos de login abaixo')
-  
-}
+                var alerta = "Preencha os campos de login abaixo";
+                window.alert(alerta);
+
+        }
