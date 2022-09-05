@@ -83,6 +83,7 @@
    
           CadastroModel objModel = new CadastroModel();
           CadastroController objController = new CadastroController();
+          
           objModel.setNome(request.getParameter("nome"));
           objModel.setSenha(request.getParameter("senha"));
           objController.inserirCadastro(objModel);
