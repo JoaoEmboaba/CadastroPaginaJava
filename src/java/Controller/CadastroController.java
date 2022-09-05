@@ -2,11 +2,20 @@ package Controller;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import Util.ConnectionFactory;
 import Model.CadastroModel;
+import java.util.ArrayList;
+import javax.xml.namespace.QName;
 
 public class CadastroController {
+
+    Connection cnn = null;
+    PreparedStatement state = null;
+    ResultSet rs = null;
+    ArrayList<CadastroModel> lista = new ArrayList<>();
+
 
     public static void inserirCadastro(CadastroModel obj) {
 
@@ -44,7 +53,36 @@ public class CadastroController {
             state.close();
         } catch (SQLException ex) {
             throw new RuntimeException("Erro ao excluir cadastro"+ ex.getMessage(), ex);
-            // TODO: handle exception
+
         }
     }
+
+    public ArrayList<CadastroModel> pesquisarCadastro(){
+
+        String sql = "SELECT * FROM cadastros";
+        cnn = ConnectionFactory.getConnection();
+
+        try {
+            
+            state = cnn.prepareStatement(sql);
+            rs = state.executeQuery(sql);
+            
+            while(rs.next()){
+
+                CadastroModel objModel = new CadastroModel();
+                objModel.setId(rs.getInt("id"));
+                objModel.setNome(rs.getString("nome"));
+                objModel.setSenha(rs.getString("senha"));
+
+                lista.add(objModel);
+            }
+            
+        } catch (SQLException ex) {
+            throw new RuntimeException("Erro ao pesquisar cadastro" + ex.getMessage(), ex);
+        }
+        
+        return lista;
+
+    }
+
 }
