@@ -8,3 +8,4 @@ Programa que irá ser integrado com a página de aprendizagem, assim os visitant
 - vsCode 
 - mysql connector java 
 - tomcat server
+- jdbc Driver
