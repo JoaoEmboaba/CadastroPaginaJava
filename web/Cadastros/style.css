@@ -7,10 +7,10 @@ body {
 
 .span-required{
 
+    display: none;
     font-family: 'Times New Roman', Times, serif;
     font-size: small;
     color:  rgba(230, 45, 45, 0.822);
-    display: none;
 }
 
 .margem{
@@ -91,6 +91,14 @@ h1 {
     font-style: italic;
     font-size: 3vw;
     letter-spacing: 0.1rem
+}
+
+.span-required{
+
+    display: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    color:  rgba(230, 45, 45, 0.822);
 }
 
 .Direita-Login {

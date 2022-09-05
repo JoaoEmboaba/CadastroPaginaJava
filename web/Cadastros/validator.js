@@ -7,3 +7,9 @@
                 window.alert(alerta);
 
         }
+
+        function sucesso(){
+
+                var alerta = "Cadastro concluido com sucesso!";
+                window.alert(alerta);
+        }

@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\jvemboaba\\Desktop\\Prog\\mysql-connector-java-8.0.29.jar",
+        "c:\\Users\\jvemboaba\\Desktop\\Prog\\apache-tomcat-9.0.65\\bin\\commons-daemon.jar"
+    ]
+}
