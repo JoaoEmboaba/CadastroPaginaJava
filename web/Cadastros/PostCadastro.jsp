@@ -32,7 +32,7 @@
                 <h1>Write once,<br />run anywhere</h1>
                 <img src="animacao.svg" alt="Animacao aprendizagem" class="left-login-image">
             </div>
-            <form id="form" method="POST" action="PostCadastro.jsp">
+            <form id="form" method="POST">
                 <div class="Direita-Login">
                     <div class="card-login">
                         <h1>Entrar</h1>
