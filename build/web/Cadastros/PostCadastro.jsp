@@ -21,7 +21,7 @@
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="100" height="100"
                 alt="imagem java" />
             <nav class="cabecalho-menu">
-                <a class="cabecalho-menu-item">Inicio</a>
+                <a class="cabecalho-menu-item" href="landingPage.html">Inicio</a>
                 <a class="cabecalho-menu-item">Sobre</a>
                 <a class="cabecalho-menu-item" href="SAQ.html">SAQ</a>
                 <a class="cabecalho-menu-item">Redes</a>
@@ -64,7 +64,7 @@
     </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
-    
+
         <%
       try {
    
