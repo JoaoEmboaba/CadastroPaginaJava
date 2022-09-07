@@ -77,7 +77,7 @@
             <br />&Copf; 2022 - João Vitor Machado
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/less" ></script>
-        
+
         <%
       try {
    
