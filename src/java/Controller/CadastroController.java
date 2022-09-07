@@ -19,7 +19,7 @@ public class CadastroController {
 
     public static void inserirCadastro(CadastroModel obj) {
 
-        String sql = "INSERT INTO cadastros (nome, senha) VALUES (?, ?)";
+        String sql = "INSERT INTO cadastros (nome, senha, email) VALUES (?, ?, ?)";
 
         Connection cnn = null;
         PreparedStatement state = null;
@@ -29,6 +29,7 @@ public class CadastroController {
             state = cnn.prepareStatement(sql);
             state.setString(1, obj.getNome());
             state.setString(2, obj.getSenha());
+            state.setString(3, obj.getEmail());
             state.execute();
             state.close();
         } catch (SQLException ex) {
@@ -73,6 +74,7 @@ public class CadastroController {
                 objModel.setId(rs.getInt("id"));
                 objModel.setNome(rs.getString("nome"));
                 objModel.setSenha(rs.getString("senha"));
+                objModel.setEmail(rs.getString("email"));
 
                 lista.add(objModel);
             }

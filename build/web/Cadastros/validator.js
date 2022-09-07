@@ -6,6 +6,14 @@
     const nome = document.getElementById('nome');
     const senha = document.getElementById('senha');   
 
+    function aviso()
+    {
+
+        var alerta = "Cadastro concluido com sucesso";
+        alert(alerta);
+    }
+
+
     form.addEventListener('submit', (e) => {
 
         e.preventDefault();
