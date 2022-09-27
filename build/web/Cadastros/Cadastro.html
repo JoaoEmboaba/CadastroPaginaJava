@@ -8,6 +8,41 @@
     <title>Entrar</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+    <style>
+        .floating {
+            animation-name: floating;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+
+        #floating{
+
+            animation-name: floating;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+
+        @keyframes floating {
+            0% {
+                transform: translate(0, 0px);
+            }
+
+            50% {
+                transform: translate(0, 15px);
+            }
+
+            100% {
+                transform: translate(0, -0px);
+            }
+        }
+
+    </style>
 </head>
 
 <body>
@@ -25,12 +60,12 @@
         </header>
         <div class="main-login">
             <div class="Esquerda-login">
-                <h1>Write once,<br />run anywhere</h1>
+                <h1 class="floating">Write once,<br />run anywhere</h1>
                 <img src="animacao.svg" alt="Animacao aprendizagem" class="left-login-image">
             </div>
             <form id="form" method="POST">
                 <div class="Direita-Login">
-                    <div class="card-login">
+                    <div class="card-login" id="floating">
                         <h1>Entrar</h1>
 
                         <div class="textField">
@@ -51,8 +86,9 @@
                         </div>
 
                         <button onclick="checkInputs()" class="botao-login" type="submit">Login</button>
-                        <span  style="color:blanchedalmond; font-size:1rem">Não possui cadastro?</span>
-                        <a id="cadastro" href="signUp.html" style="color:blanchedalmond;font-size: 1rem;">Cadastre-se</a>
+                        <span style="color:blanchedalmond; font-size:1rem">Não possui cadastro?</span>
+                        <a id="cadastro" href="signUp.html"
+                            style="color:blanchedalmond;font-size: 1rem;">Cadastre-se</a>
 
             </form>
         </div>
@@ -70,7 +106,7 @@
     const msgsErros = document.querySelectorAll('.error-message');
     const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const nome = document.getElementById('nome');
-    const senha = document.getElementById('senha');   
+    const senha = document.getElementById('senha');
 
     form.addEventListener('submit', (e) => {
 
@@ -84,7 +120,7 @@
 
         var alerta = "Cadastro concluido com sucesso!";
         window.alert(alerta);
-        
+
     }
 
     function checkInputs() {
@@ -97,10 +133,10 @@
             msgsErros[0].style.display = "block";
         } else {
             sucesso();
-        } if(senhaValue == ''){
+        } if (senhaValue == '') {
             campos[1].style.border = '1px solid #e63636';
             msgsErros[1].style.display = "block";
-        }else{
+        } else {
             sucesso();
         }
     }
