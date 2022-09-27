@@ -1,276 +1,250 @@
-
 body {
-    margin: 0;
-    overflow-x: hidden;
-    overflow-y: scroll;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 *::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  *::-webkit-scrollbar-track {
-    background: rgb(151, 25, 25);
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background-color: rgb(151, 25, 25);
-    border-radius: 20px;
-    border: 3px solid #ffe4c4
-  }
-
-.span-required{
-
-    display: none;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: small;
-    color:  rgba(230, 45, 45, 0.822);
+  width: 12px;
 }
 
-.margem{
+*::-webkit-scrollbar-track {
+  background: rgb(151, 25, 25);
+}
 
-    padding-left: 1rem;
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(151, 25, 25);
+  border-radius: 20px;
+  border: 3px solid #ffe4c4;
+}
+
+.span-required {
+  display: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: small;
+  color: rgba(230, 45, 45, 0.822);
+}
+
+.margem {
+  padding-left: 1rem;
 }
 
 .BordaSuperior {
-
-    background: linear-gradient(-0deg, rgb(221, 188, 145), rgb(255, 235, 205),#ffe4c4 );
-    padding-top: 1rem;
+  background: linear-gradient(
+    -0deg,
+    rgb(221, 188, 145),
+    rgb(255, 235, 205),
+    #ffe4c4
+  );
+  padding-top: 1rem;
 }
 
-.cabecalho{
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 15px;
-    padding-right: 60rem;
-
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  padding-right: 60rem;
 }
 
-.cabecalho-imagem{
-
-    height: 72px;
-    padding-right: 5rem;
-    padding-left: 1rem;
+.cabecalho-imagem {
+  height: 62px;
+  padding-right: 5rem;
+  padding-left: 1rem;
 }
 
-.cabecalho-menu{
-
-    display: flex;
-    gap: 250px;
+.cabecalho-menu {
+  display: flex;
+  gap: 300px;
 }
 
-.cabecalho-menu-item{
-
-    font-family: cursive, sans-serif;
-    color: rgb(116, 21, 21);
-    font-size: 1.5rem;
-    text-decoration: none;
+.cabecalho-menu-item {
+  font-family: cursive, sans-serif;
+  color: rgb(116, 21, 21);
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 
-.cabecalho-menu-item:hover{
-
-    text-decoration: underline;
-    color: rgb(151, 25, 25);
-    cursor: pointer;
-    box-sizing: border-box;
-
+.cabecalho-menu-item:hover {
+  text-decoration: underline;
+  color: rgb(151, 25, 25);
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
 .main-login {
-
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(-180deg, rgb(116, 21, 21),rgb(151, 25, 25), rgb(63, 11, 11) ); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-width: thin;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    -180deg,
+    rgb(116, 21, 21),
+    rgb(151, 25, 25),
+    rgb(63, 11, 11)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: thin;
 }
 
 .Esquerda-login {
-
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1 {
-    color: bisque;
-    font-style: italic;
-    font-size: 3vw;
-    letter-spacing: 0.1rem
+  color: bisque;
+  font-style: italic;
+  font-size: 3vw;
+  letter-spacing: 0.1rem;
 }
 
-.span-required{
-
-    display: none;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: small;
-    color:  rgba(230, 45, 45, 0.822);
+.span-required {
+  display: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: small;
+  color: rgba(230, 45, 45, 0.822);
 }
 
-.error-message{
-
-    display: none;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: small;
-    color:  rgba(230, 45, 45, 0.822);
+.error-message {
+  display: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: small;
+  color: rgba(230, 45, 45, 0.822);
 }
 
 .Direita-Login {
-
-    width: 40vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-login {
-
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px 50px;
-    background: rgb(63, 11, 11);
-    border-radius: 20px;
-    box-shadow: 0px 10px 40px rgb(65, 31, 31);
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 50px;
+  background: rgb(63, 11, 11);
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px rgb(65, 31, 31);
 }
 
-.card-login>h1 {
-
-    color: #ffebcd;
-    font-style: normal;
-    margin: 0;
-
+.card-login > h1 {
+  color: #ffebcd;
+  font-style: normal;
+  margin: 0;
 }
 
 .textField {
-
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.textField>input {
-
-    width: 100%;
-    border: none;
-    padding: 15px;
-    border-radius: 10px;
-    background: rgb(104, 42, 42);
-    color: antiquewhite;
-    font-size: 12pt;
-    outline: none;
-    box-sizing: border-box;
+.textField > input {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgb(104, 42, 42);
+  color: antiquewhite;
+  font-size: 12pt;
+  outline: none;
+  box-sizing: border-box;
 }
 
-.textField>label {
-
-    color: bisque;
-    margin: 10px 0px;
-    margin-top: 1rem;
+.textField > label {
+  color: bisque;
+  margin: 10px 0px;
+  margin-top: 1rem;
 }
 
 .botao-login {
-
-    margin: 25px;
-    padding: 16px 0px;
-    width: 100%;
-    border: none;
-    border-radius: 20px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 3px;
-    color: rgb(63, 11, 11);
-    background: bisque;
-    cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #ffe4c4;
+  margin: 25px;
+  padding: 16px 0px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: rgb(63, 11, 11);
+  background: bisque;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #ffe4c4;
 }
 
 .botao-login:hover {
-
-    background-color: rgb(221, 188, 145);
+  background-color: rgb(221, 188, 145);
 }
 
-.textField>input::placeholder {
-
-    color: rgb(156, 135, 135)
+.textField > input::placeholder {
+  color: rgb(156, 135, 135);
 }
 
 .left-login-image {
-
-    width: 20vw;
-    width: 450px;
-    height: 450px;
-    border: none;
+  width: 20vw;
+  width: 450px;
+  height: 450px;
+  border: none;
 }
 
-.Esquerda-login>h1 {
-
-    font-size: 2.5rem;
-    margin-bottom: 0px;
+.Esquerda-login > h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0px;
 }
 
-.Direita-Login>h1 {
-
-    font-size: 1rem;
-
+.Direita-Login > h1 {
+  font-size: 1rem;
 }
 
-#cadastro{
-
-    text-decoration: none;
+#cadastro {
+  text-decoration: none;
 }
 
-#cadastro:hover{
-
-    text-decoration: underline;
-    color: rgb(151, 25, 25);
-    cursor: pointer;
-    box-sizing: border-box;
+#cadastro:hover {
+  text-decoration: underline;
+  color: rgb(151, 25, 25);
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
 @media only screen and (max-widht: 950px) {
+  .main-login {
+    flex-direction: column;
+  }
 
-    .main-login {
-        flex-direction: column;
-    }
+  .left-login > h1 {
+    display: none;
+  }
 
-    .left-login>h1 {
+  .left-login {
+    width: 100%;
+    height: auto;
+  }
 
-        display: none;
-    }
+  .right-login > h1 {
+    display: none;
+  }
 
-    .left-login {
-        width: 100%;
-        height: auto;
-    }
+  .right-login {
+    width: 100%;
+    height: auto;
+  }
 
-    .right-login>h1 {
-
-        display: none;
-    }
-
-    .right-login {
-        width: 100%;
-        height: auto;
-    }
-
-    .left-login-image {
-
-        width: 50vw;
-
-    }
+  .left-login-image {
+    width: 50vw;
+  }
 }

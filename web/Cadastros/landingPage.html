@@ -1,188 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
-    <title>Form Inicio</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="LandingStyle.css"
+    <title>Landing Page</title>
 </head>
-
-
-<style>
-    body {
-
-        background-color: bisque;
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-
-    .container {
-
-        display: flex;
-        width: 95vw;
-        height: 95vh;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .borda {
-
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 30px 50px;
-        background: #3f0b0b;
-        border-radius: 1rem;
-        box-shadow: 0px 10px 40px rgb(65, 31, 31);
-    }
-
-    .borda>h2 {
-
-        color: bisque;
-        letter-spacing: 0.1rem;
-        font-size: 2rem;
-        box-sizing: border-box;
-        font-family: cursive;
-        font-weight: bold;
-
-    }
-
-    .campos {
-
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 10px 5px;
-    }
-
-    .campos>input {
-
-        width: 100%;
-        border: none;
-        border-width: 100%;
-        padding: 10px;
-        border-radius: 1rem;
-        box-sizing: border-box;
-        background-color: #554545;
-        font-size: 12pt;
-
-    }
-
-    .campos>input::placeholder {
-
-        color: blanchedalmond;
-
-    }
-
-    .campos>label {
-
-        color: bisque;
-        padding-bottom: 0.4rem;
-    }
-
-    .botao {
-
-        margin-top: 1.5rem;
-        border: none;
-        border-radius: 1.5rem;
-        width: 100%;
-        padding: 15px;
-        color: rgb(97, 27, 27);
-        background-color: bisque;
-        box-shadow: 0px 5px 40px blanchedalmond;
-        font-family: cursive;
-        font-weight: bold;
-        font-size: 1rem;
-    }
-
-    .botao:hover {
-
-        background-color: rgb(255, 216, 168);
-        cursor: pointer;
-    }
-
-    .span {
-
-        display: none;
-        color: rgb(180, 77, 77);
-        font-size: 0.8rem;
-        width: 100%;
-        align-items: center;
-        padding-left: 0.5rem;
-        padding-top: 0.2rem;
-    }
-</style>
-
 <body>
-    <div class="container">
-        <form id="form">
-            <div class="borda">
-                <h2>Cadastro</h2>
-                <div class="campos">
-                    <label>Nome</label>
-                    <input oninput="validar()" class="campo" id="nome" name="nome" type="text" placeholder="Digite o seu nome">
-                    <span class="span">O nome deve conter no minímo 4 caracteres</span>
-                </div>
-                <div class="campos">
-                    <label>Email</label>
-                    <input class="campo" id="email" name="email" type="email" placeholder="Digite o seu email">
-                    <span class="span">O email deve conter no minímo 6 caracteres</span>
-                </div>
-                <div class="campos">
-                    <label>Senha</label>
-                    <input class="campo" id="senha" name="senha" type="password" placeholder="Digite a sua senha">
-                    <span class="span">A senha deve ter no minímo 6 caracters</span>
-                </div>
-                <button type="submit" name="botao" class="botao">Cadastrar-se</button>
-            </div>
-        </form>
-    </div>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="100" height="100"
+            alt="imagem java" />
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="landingPage.html">Inicio</a>
+            <a class="cabecalho-menu-item">Sobre</a>
+            <a class="cabecalho-menu-item" href="SAQ.html">SAQ</a>
+            <a class="cabecalho-menu-item">Redes</a>
+        </nav>
+    </header>
 </body>
-
-<script>
-
-    const form = document.getElementById('form');
-    const campos = document.querySelectorAll('.campo');
-    const spans = document.querySelectorAll('.span');
-    const nome = document.getElementById('nome');
-    const senha = document.getElementsById('senha');
-    const email = document.getElementById('email');
-
-    function validar() {
-
-        const nomeValue = nome.value.trim();
-        const senhaValue = senha.value.trim();
-        const emailValue = email.value.trim();
-
-        if (nomeValue.length < 4 ) {
-            spans[0].style.display = "block";
-            campos[0].style.border = "1px solid #e63636";
-        } else {
-            spans[0].style.display = "none";
-            campos[0].style.border = "";
-        }
-
-        if(emailValue.length < 6){
-            spans[1].style.display = "block";
-            campos[1].style.border = "1px solid #e63636";
-        }else{
-            spans[1].style.display = "none";
-            campos[1].style.border = "";
-        }
-
-        if(senhaValue.length < 6){
-            spans[2].style.display = "block";
-            campos[2].style.border = "1px solid #e63636";
-        }else{
-            spans[2].style.display = "none";
-            campos[2].style.border = "";
-        }
-    }
-
-</script>
-
 </html>

@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.BordaSuperior {
+  background-color: #ffe4c4;
+  padding-top: 1rem;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  padding-right: 60rem;
+}
+
+.cabecalho-imagem {
+  height: 62px;
+  padding-right: 5rem;
+  padding-left: 1rem;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 300px;
+}
+
+.cabecalho-menu-item {
+  font-family: cursive, sans-serif;
+  color: rgb(116, 21, 21);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.cabecalho-menu-item:hover {
+  text-decoration: underline;
+  color: rgb(151, 25, 25);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.main-login {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    -180deg,
+    rgb(116, 21, 21),
+    rgb(151, 25, 25),
+    rgb(63, 11, 11)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(151, 25, 25);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(151, 25, 25);
+  border-radius: 20px;
+  border: 3px solid #ffe4c4;
+}
