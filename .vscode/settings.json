@@ -2,7 +2,18 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "c:\\Users\\jvemboaba\\Desktop\\Prog\\mysql-connector-java-8.0.29.jar",
-        "c:\\Users\\jvemboaba\\Desktop\\Prog\\apache-tomcat-9.0.65\\bin\\commons-daemon.jar"
+        "c:\\Users\\jvemboaba\\Desktop\\Prog\\apache-tomcat-9.0.65\\bin\\commons-daemon.jar",
+        "c:\\Users\\Usuario\\OneDrive\\Documentos\\Arquivos baixados\\Bibliotecas\\jar_files\\mysql-connector-java-8.0.30.jar"
     ],
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "rsp-ui.rsp.java.home":null,
+    "redhat.telemetry.enabled": null,
+    "vscodeAdapters.showChannelOnServerOutput":true,
+    "rsp-ui.newServerWebviewWorkflow":true,
+    "rsp-ui.enableStartServerOnActivation":[],
+    "rsp-ui.enableAsyncPublish": true,
+    "java.project.sourcePaths": [
+        "src/java",
+        ""
+    ]
 }

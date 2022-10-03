@@ -147,18 +147,23 @@
 
     }
 
+    .botao-login:hover{
+
+        background-color: rgb(252, 206, 151);;
+    }
+
     *::-webkit-scrollbar {
         width: 12px;
     }
 
     *::-webkit-scrollbar-track {
-        background: rgb(151, 25, 25);
+        background: #ffe4c4
     }
 
     *::-webkit-scrollbar-thumb {
-        background-color: rgb(151, 25, 25);
+        background-color: #ffe4c4;
         border-radius: 20px;
-        border: 3px solid #ffe4c4
+        border: 3px solid #fdd8ab;
     }
 
     .error-message {
@@ -184,6 +189,31 @@
         margin-bottom: 0.5rem;
 
     }
+
+    #floating{
+
+        animation-name: floating;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+
+    @keyframes floating {
+        0% {
+            transform: translate(0, 0px);
+        }
+
+        50% {
+            transform: translate(0, 15px);
+        }
+
+        100% {
+            transform: translate(0, -0px);
+        }
+    }
+
 </style>
 </head>
 
@@ -202,7 +232,7 @@
         </header>
 
         <div class="main-login">
-            <div class="card">
+            <div class="card" id="floating">
 
                 <form method="post" action="PostCadastro.jsp">
                     <h2 id="titulo">Cadastro</h2>

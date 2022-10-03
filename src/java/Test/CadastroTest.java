@@ -13,12 +13,13 @@ public class CadastroTest {
         CadastroController objController = new CadastroController();
         ArrayList<CadastroModel> lista = objController.pesquisarCadastro();
 
-        /*objModel.setNome(nome);
+        /*
+        objModel.setNome(nome);
         objModel.setSenha(senha);
         objModel.setEmail(email);
         objController.inserirCadastro(objModel);
 
-
+        
         objModel.setId(id);
         objController.excluirCadastro(objModel);
         
