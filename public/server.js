@@ -12,7 +12,7 @@ app.set('view engine', 'html');
 
 app.use('/', (req, res) => {
 
-        res.render('SAQ.html');
+        res.render('FAQ.html');
     });
 
 server.listen(3000);
