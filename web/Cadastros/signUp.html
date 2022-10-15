@@ -8,213 +8,225 @@
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
     <title>Cadastro</title>
     <style>
-    body {
+        body {
 
-        margin: 0;
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
-
-    .BordaSuperior {
-
-        background: linear-gradient(-0deg, rgb(221, 188, 145), rgb(255, 235, 205), #ffe4c4);
-        padding-top: 1rem;
-    }
-
-    .cabecalho {
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding-bottom: 15px;
-        padding-right: 60rem;
-
-    }
-
-    .cabecalho-imagem {
-
-        height: 62px;
-        padding-right: 5rem;
-        padding-left: 1rem;
-    }
-
-    .cabecalho-menu {
-
-        display: flex;
-        gap: 300px;
-    }
-
-    .cabecalho-menu-item {
-
-        font-family: cursive, sans-serif;
-        color: rgb(116, 21, 21);
-        font-size: 1.2rem;
-        text-decoration: none;
-    }
-
-    .cabecalho-menu-item:hover {
-
-        text-decoration: underline;
-        color: rgb(151, 25, 25);
-        cursor: pointer;
-        box-sizing: border-box;
-
-    }
-
-    .main-login {
-
-        width: 100vw;
-        height: 100vh;
-        background: linear-gradient(-180deg, rgb(116, 21, 21), rgb(151, 25, 25), rgb(63, 11, 11));
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-width: thin;
-    }
-
-    .card {
-
-        width: 25%;
-        height: 75%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 1.5rem;
-        padding: 30px 50px;
-        background: rgb(63, 11, 11);
-        border-radius: 20px;
-        box-shadow: 0px 10px 40px rgb(65, 31, 31);
-
-    }
-
-    .textField>input {
-
-        width: 100%;
-        border: none;
-        padding: 15px;
-        border-radius: 10px;
-        background: rgb(104, 42, 42);
-        color: antiquewhite;
-        font-size: 12pt;
-        margin-bottom: 0.5rem;
-        outline: none;
-        box-sizing: border-box;
-        margin-top: 0.5rem
-    }
-
-    .textField>input::placeholder {
-
-        color: rgb(156, 135, 135)
-    }
-
-    #titulo {
-
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        color: #ffe4c4;
-        font-style: normal;
-        font-size: 2.5rem;
-        font-weight: 1rem;
-    }
-
-    .textField>label {
-
-        color: bisque;
-        margin: 10px 0px;
-        padding-top: 5rem;
-    }
-
-    .botao-login {
-
-        margin: 25px;
-        padding: 15px 0px;
-        width: 85%;
-        border: none;
-        margin-bottom: 2rem;
-        border-radius: 20px;
-        outline: none;
-        text-transform: uppercase;
-        font-weight: 800;
-        letter-spacing: 3px;
-        color: rgb(63, 11, 11);
-        background: bisque;
-        cursor: pointer;
-        box-shadow: 0px 10px 40px -12px #ffe4c4;
-        box-sizing: border-box;
-
-    }
-
-    .botao-login:hover{
-
-        background-color: rgb(252, 206, 151);;
-    }
-
-    *::-webkit-scrollbar {
-        width: 10px;
-    }
-
-    *::-webkit-scrollbar-track {
-        background: #ffe4c4
-    }
-
-    *::-webkit-scrollbar-thumb {
-        background-color: #ffe4c4;
-        border-radius: 20px;
-        border: 3px solid #f3cd9e;
-    }
-
-    .error-message {
-
-        display: none;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: small;
-        color: rgba(230, 45, 45, 0.822);
-        margin-top: 0.1rem;
-        padding-top: 0.1rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .span-required {
-
-        display: none;
-        display: none;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: small;
-        color: rgba(230, 45, 45, 0.822);
-        margin-top: 0.1rem;
-        padding-top: 0.1rem;
-        margin-bottom: 0.5rem;
-
-    }
-
-    #floating{
-
-        animation-name: floating;
-        animation-duration: 15s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        margin-left: 30px;
-        margin-top: 5px;
-    }
-
-    @keyframes floating {
-        0% {
-            transform: translate(0, 0px);
+            margin: 0;
+            overflow-y: scroll;
+            overflow-x: hidden;
         }
 
-        50% {
-            transform: translate(0, 15px);
+        .BordaSuperior {
+
+            background: linear-gradient(-0deg, rgb(221, 188, 145), rgb(255, 235, 205), #ffe4c4);
+            padding-top: 1rem;
         }
 
-        100% {
-            transform: translate(0, -0px);
-        }
-    }
+        .cabecalho {
 
-</style>
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 15px;
+            padding-right: 60rem;
+
+        }
+
+        .cabecalho-imagem {
+
+            height: 62px;
+            padding-right: 5rem;
+            padding-left: 1rem;
+        }
+
+        .cabecalho-menu {
+
+            display: flex;
+            gap: 300px;
+        }
+
+        .cabecalho-menu-item {
+
+            font-family: cursive, sans-serif;
+            color: rgb(116, 21, 21);
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+        .cabecalho-menu-item:hover {
+
+            text-decoration: underline;
+            color: rgb(151, 25, 25);
+            cursor: pointer;
+            box-sizing: border-box;
+
+        }
+
+        .main-login {
+
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(-180deg, rgb(116, 21, 21), rgb(151, 25, 25), rgb(63, 11, 11));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-width: thin;
+        }
+
+        .card {
+
+            width: 25%;
+            height: 75%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 1.5rem;
+            padding: 30px 50px;
+            background: rgb(63, 11, 11);
+            border-radius: 20px;
+            box-shadow: 0px 10px 40px rgb(65, 31, 31);
+
+        }
+
+        .textField>input {
+
+            width: 100%;
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            background: rgb(104, 42, 42);
+            color: antiquewhite;
+            font-size: 12pt;
+            margin-bottom: 0.5rem;
+            outline: none;
+            box-sizing: border-box;
+            margin-top: 0.5rem
+        }
+
+        .textField>input::placeholder {
+
+            color: rgb(156, 135, 135)
+        }
+
+        #titulo {
+
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            color: #ffe4c4;
+            font-style: normal;
+            font-size: 2.5rem;
+            font-weight: 1rem;
+        }
+
+        .textField>label {
+
+            color: bisque;
+            margin: 10px 0px;
+            padding-top: 5rem;
+        }
+
+        .botao-login {
+
+            margin: 25px;
+            padding: 15px 0px;
+            width: 85%;
+            border: none;
+            margin-bottom: 2rem;
+            border-radius: 20px;
+            outline: none;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 3px;
+            color: rgb(63, 11, 11);
+            background: bisque;
+            cursor: pointer;
+            box-shadow: 0px 10px 40px -12px #ffe4c4;
+            box-sizing: border-box;
+
+        }
+
+        .botao-login:hover {
+
+            background-color: rgb(252, 206, 151);
+            ;
+        }
+
+        *::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        *::-webkit-scrollbar-track {
+            background: #ffe4c4
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background-color: #ffe4c4;
+            border-radius: 20px;
+            border: 3px solid #f3cd9e;
+        }
+
+        .error-message {
+
+            display: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: small;
+            color: rgba(230, 45, 45, 0.822);
+            margin-top: 0.1rem;
+            padding-top: 0.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .span-required {
+
+            display: none;
+            display: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: small;
+            color: rgba(230, 45, 45, 0.822);
+            margin-top: 0.1rem;
+            padding-top: 0.1rem;
+            margin-bottom: 0.5rem;
+
+        }
+
+        #floating {
+
+            animation-name: floating;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+
+        @keyframes floating {
+            0% {
+                transform: translate(0, 0px);
+            }
+
+            50% {
+                transform: translate(0, 15px);
+            }
+
+            100% {
+                transform: translate(0, -0px);
+            }
+        }
+
+        #confSenha {
+
+            display: none;
+            display: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: small;
+            color: rgba(230, 45, 45, 0.822);
+            margin-top: 0.1rem;
+            padding-top: 0.1rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -238,9 +250,10 @@
                     <h2 id="titulo">Cadastro</h2>
                     <div class="textField">
                         <label>Nome</label>
-                        <input name="nome" id="nome" class="required" type="text" placeholder="Informe o seu nome de usuário"
-                            oninput="nameValidate()">
-                        <span class="span-required" style="margin-top:-9px; margin: bottom 0.3rem;">Nome deve ter no mínimo 4 caracteres</span>
+                        <input name="nome" id="nome" class="required" type="text"
+                            placeholder="Informe o seu nome de usuário" oninput="nameValidate()">
+                        <span class="span-required" style="margin-top:-9px; margin: bottom 0.3rem;">Nome deve ter no
+                            mínimo 4 caracteres</span>
                         <span class="error-message" id="spanN">O campo de nome não pode estar vazio</span>
                     </div>
                     <div class="textField">
@@ -249,15 +262,16 @@
                     </div>
                     <div class="textField">
                         <label>Senha</label>
-                        <input name = "senha" id="senha" class="required" type="password" placeholder="Informe a sua senha"
-                            oninput="passValidate()">
-                        <span class="span-required" style="margin-top:-9px; margin: bottom 0.3rem;" 
-                        >Digite uma senha com no minímo 6 caracteres</span>
+                        <input name="senha" id="senha" class="required" type="password"
+                            placeholder="Informe a sua senha" oninput="passValidate()">
+                        <span class="span-required" style="margin-top:-9px; margin: bottom 0.3rem;">Digite uma senha com
+                            no minímo 6 caracteres</span>
                         <span class="error-message">O campo de senha não pode estar vazio</span>
                     </div>
                     <div class="textField">
                         <label>Confirmar senha</label>
-                        <input name="senha" type="password" placeholder="Confirme a sua senha">
+                        <input oninput="confirmPass()" name="senha" type="password" placeholder="Confirme a sua senha" id="confsenha">
+                        <span id="confSenha">As senhas não coincidem</span>
                     </div>
                     <button onclick="aviso()" type="submit" class="botao-login">Cadastrar-se</button>
                 </form>

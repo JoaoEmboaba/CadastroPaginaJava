@@ -1,0 +1,65 @@
+02-Oct-2022 22:10:22.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.65
+02-Oct-2022 22:10:22.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 14 2022 12:28:53 UTC
+02-Oct-2022 22:10:22.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.65.0
+02-Oct-2022 22:10:22.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+02-Oct-2022 22:10:22.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+02-Oct-2022 22:10:22.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+02-Oct-2022 22:10:22.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17.0.4.1
+02-Oct-2022 22:10:22.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.4.1+1-LTS-2
+02-Oct-2022 22:10:22.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+02-Oct-2022 22:10:22.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65
+02-Oct-2022 22:10:22.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65
+02-Oct-2022 22:10:22.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+02-Oct-2022 22:10:22.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+02-Oct-2022 22:10:22.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+02-Oct-2022 22:10:22.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-Oct-2022 22:10:22.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-Oct-2022 22:10:22.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65\conf\logging.properties
+02-Oct-2022 22:10:22.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Oct-2022 22:10:22.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1|DESKTOP-MVEQN47
+02-Oct-2022 22:10:22.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+02-Oct-2022 22:10:22.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Oct-2022 22:10:22.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+02-Oct-2022 22:10:22.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65
+02-Oct-2022 22:10:22.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65
+02-Oct-2022 22:10:22.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65\temp
+02-Oct-2022 22:10:22.948 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+02-Oct-2022 22:10:22.948 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+02-Oct-2022 22:10:22.948 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+02-Oct-2022 22:10:23.014 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+02-Oct-2022 22:10:23.294 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+02-Oct-2022 22:10:23.322 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [861] milliseconds
+02-Oct-2022 22:10:23.393 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+02-Oct-2022 22:10:23.393 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.65]
+02-Oct-2022 22:10:23.403 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65\conf\Catalina\localhost\CadastroApplication.xml]
+02-Oct-2022 22:10:23.441 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/CadastroApplication] in deployment descriptor [C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65\conf\Catalina\localhost\CadastroApplication.xml] has been ignored
+02-Oct-2022 22:10:24.498 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+02-Oct-2022 22:10:24.610 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65\conf\Catalina\localhost\CadastroApplication.xml] has finished in [1.205] ms
+02-Oct-2022 22:10:24.611 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65\webapps\docs]
+02-Oct-2022 22:10:24.679 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65\webapps\docs] has finished in [67] ms
+02-Oct-2022 22:10:24.679 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65\webapps\examples]
+02-Oct-2022 22:10:25.897 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65\webapps\examples] has finished in [1.218] ms
+02-Oct-2022 22:10:25.898 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65\webapps\host-manager]
+02-Oct-2022 22:10:26.015 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65\webapps\host-manager] has finished in [117] ms
+02-Oct-2022 22:10:26.016 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65\webapps\manager]
+02-Oct-2022 22:10:26.121 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65\webapps\manager] has finished in [105] ms
+02-Oct-2022 22:10:26.122 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65\webapps\ROOT]
+02-Oct-2022 22:10:26.168 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Usuario\OneDrive\Documentos\Arquivos baixados\Bibliotecas\apache-tomcat-9.0.65-windows-x64\apache-tomcat-9.0.65\webapps\ROOT] has finished in [46] ms
+02-Oct-2022 22:10:26.172 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+02-Oct-2022 22:10:26.224 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2901] milliseconds
+02-Oct-2022 22:10:41.519 INFO [http-nio-8080-exec-5] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/CadastroApplication] has started
+02-Oct-2022 22:10:42.224 INFO [http-nio-8080-exec-5] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+02-Oct-2022 22:10:42.228 INFO [http-nio-8080-exec-5] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/CadastroApplication] is completed
+02-Oct-2022 23:24:47.319 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+02-Oct-2022 23:24:47.320 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+02-Oct-2022 23:24:47.331 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+02-Oct-2022 23:24:47.411 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [CadastroApplication] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+02-Oct-2022 23:24:47.412 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [CadastroApplication] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/java.lang.Object.wait(Native Method)
+ java.base@17.0.4.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+02-Oct-2022 23:24:47.417 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+02-Oct-2022 23:24:47.433 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
