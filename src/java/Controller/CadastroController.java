@@ -60,7 +60,7 @@ public class CadastroController {
 
     public ArrayList<CadastroModel> pesquisarCadastro(){
 
-        String sql = "SELECT * FROM cadastros";
+        String sql = "SELECT nome, senha FROM cadastros";
         cnn = ConnectionFactory.getConnection();
 
         try {
@@ -80,7 +80,7 @@ public class CadastroController {
             }
             
         } catch (SQLException ex) {
-            throw new RuntimeException("Erro ao pesquisar cadastro" + ex.getMessage(), ex);
+            throw new RuntimeException("Erro ao encontrar cadastro" + ex.getMessage(), ex);
         }
         
         return lista;

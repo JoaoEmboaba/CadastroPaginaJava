@@ -1,25 +1,29 @@
-const express = require('express'); //Chama as dependências do express
-const path = require('path'); // Chama comandos padrões do node
+const { Console } = require('console');
+const path = require('path');
+const express = require('express');
+const app = express();
+const server = require('http').createServer(app);
+const io = require('socket.io')(server);
 
-const app = express(); //Instância o express como função
-const server = require('http').createServer(app); //Estabelece uma conxeão http
-const io = require('socket.io')(server); //Estabelece uma conexão wss
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', path.join(__dirname, 'public'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
-app.use('/', (req, res) => {
-    res.render('index.html');
+server.listen(3000, function(){
+
+    console.log('Conexão feita na porta 3000');
+    
 });
 
-io.on('connection', socket =>{
-    console.log('Socket conectado: ${socket.id}'); //Comandos usados para a identificar cada socket que entra no chat
+app.get('/', (req, res) =>{
 
-    socket.on('sendMessage', data => {
-        console.log(data); 
-    })
+    res.sendFile(__dirname+'/index.html');
 });
 
-server.listen(3000); //Define a porta que iremos utilizar
+io.on('connection', (socket) =>{
+
+    console.log('Nova conexão ', socket.id);
+
+});
