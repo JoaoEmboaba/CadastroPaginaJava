@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    background-color: rgb(248, 221, 179);
   }
   
   * {
@@ -15,25 +16,55 @@ html, body {
     align-items: center;
     flex-direction: column;
   }
+
+  form{
+
+    border: solid;
+    border-radius: 2rem;
+    margin: 3rem;
+    margin-bottom: 1rem;
+    padding:2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  rgb(129, 42, 42);
+  }
+
+  h1{
+    font-family: cursive;
+    color: rgb(245, 218, 178);
+    margin-bottom: 1rem;
+  }
   
   input {
     width: 600px;
     border: 1px solid #ddd;
     height: 50px;
+    margin-top: 0.1rem;
     padding: 0 20px;
     font-size: 14px;
+    border-radius: 2rem;
+    background-color: blanchedalmond;
   }
-  
+
+  input::placeholder{
+
+    color: rgb(129, 42, 42);
+  }
+
   button {
     width: 600px;
     height: 50px;
     font-size: 14px;
-    background: #069;
+    background: rgb(129, 42, 42);
     text-align: center;
     line-height: 50px;
     font-weight: bold;
     color: #FFF;
-    margin-top: 10px;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    border-style: solid;
   }
   
   .messages {
@@ -42,4 +73,51 @@ html, body {
     margin: 20px 0;
     border: 1px solid #ddd;
     padding: 20px;
+    border-color: rgb(129, 42, 42);
+    border-radius: 2rem;
+    background-color: rgb(247, 220, 179);
+  }
+  
+  .BordaSuperior {
+    background: linear-gradient(
+      -0deg,
+      rgb(221, 188, 145),
+      rgb(255, 235, 205),
+      #ffe4c4
+    );
+    padding-top: 1rem;
+  }
+  
+  .cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    padding-right: 60rem;
+  }
+  
+  .cabecalho-imagem {
+    height: 62px;
+    padding-right: 5rem;
+    padding-left: 1rem;
+  }
+  
+  .cabecalho-menu {
+    display: flex;
+    gap: 300px;
+  }
+  
+  .cabecalho-menu-item {
+    font-family: cursive, sans-serif;
+    color: rgb(116, 21, 21);
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  .cabecalho-menu-item:hover {
+    text-decoration: underline;
+    color: rgb(151, 25, 25);
+    cursor: pointer;
+    box-sizing: border-box;
   }

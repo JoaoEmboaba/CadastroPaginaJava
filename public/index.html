@@ -11,14 +11,26 @@
 </head>
 
 <body>
-
-    <form id="chat" action="">
-        <input id="nome" type="text" name="username" placeholder="Digite o seu usuário">
-        <div class="messages"></div>
-        <input id="entrada" type="text" name="message" placeholder="Digite a sua mensagem">
-        <button>Enviar</button>
-    </form>
-
+    <div class="BordaSuperior">
+        <header class="cabecalho">
+            <img class="cabecalho-imagem"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="100" height="100"
+                alt="imagem java" />
+            <nav class="cabecalho-menu">
+                <a class="cabecalho-menu-item" href="landingPage.html">Inicio</a>
+                <a class="cabecalho-menu-item">Sobre</a>
+                <a class="cabecalho-menu-item" href="FAQ.html">FAQ</a>
+                <a class="cabecalho-menu-item">Redes</a>
+            </nav>
+        </header>
+        <form id="chat" action="">
+            <h1>Tire as suas dúvidas</h1>
+            <input id="nome" type="text" name="username" placeholder="Digite o seu usuário">
+            <div class="messages"></div>
+            <input id="entrada" type="text" name="message" placeholder="Digite a sua mensagem">
+            <button>Enviar</button>
+        </form>
+    </div>
     <script src="/socket.io/socket.io.js"></script>
     <script>
 
@@ -28,8 +40,8 @@
             $('.messages').append('<div class="message"><strong>' + message.author + '</strong>: ' + message.message + '<div>');
         }
 
-        socket.on('previousMessages', function(messages) {
-            for(message of messages){
+        socket.on('previousMessages', function (messages) {
+            for (message of messages) {
                 renderMessage(message);
             }
         });
