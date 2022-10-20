@@ -1,6 +1,10 @@
 html, body {
-    height: 100%;
-    background-color: rgb(248, 221, 179);
+  background: linear-gradient(
+    -0deg,
+    rgb(218, 177, 125),
+    rgb(228, 181, 110),
+    #e0b682
+  );
   }
   
   * {
@@ -10,39 +14,35 @@ html, body {
   }
   
   #chat {
-    height: 100%;
+
+    margin-top: 6rem;
+    height: 70vh;
+    width: 40vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
-  }
-
-  form{
-
-    border: solid;
-    border-radius: 2rem;
-    margin: 3rem;
-    margin-bottom: 1rem;
-    padding:2rem;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:  rgb(129, 42, 42);
+    margin-left: 1rem;
   }
 
   h1{
     font-family: cursive;
-    color: rgb(245, 218, 178);
-    margin-bottom: 1rem;
+    color: rgb(119, 25, 25);
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.5rem;
   }
   
   input {
-    width: 600px;
-    border: 1px solid #ddd;
+    width: 40vw;
+    border: 1px solid rgb(129, 42, 42);
     height: 50px;
-    margin-top: 0.1rem;
-    padding: 0 20px;
+    margin-top: 0.1rem; 
+    padding: 1rem;
     font-size: 14px;
     border-radius: 2rem;
     background-color: blanchedalmond;
@@ -51,10 +51,11 @@ html, body {
   input::placeholder{
 
     color: rgb(129, 42, 42);
+    font-weight: bold;
   }
 
   button {
-    width: 600px;
+    width: 40vw;
     height: 50px;
     font-size: 14px;
     background: rgb(129, 42, 42);
@@ -68,56 +69,15 @@ html, body {
   }
   
   .messages {
-    width: 600px;
+
+    text-align: start;
+    width: 40vw;
     height: 400px;
     margin: 20px 0;
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 10px 20px;
     border-color: rgb(129, 42, 42);
     border-radius: 2rem;
     background-color: rgb(247, 220, 179);
   }
   
-  .BordaSuperior {
-    background: linear-gradient(
-      -0deg,
-      rgb(221, 188, 145),
-      rgb(255, 235, 205),
-      #ffe4c4
-    );
-    padding-top: 1rem;
-  }
-  
-  .cabecalho {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 15px;
-    padding-right: 60rem;
-  }
-  
-  .cabecalho-imagem {
-    height: 62px;
-    padding-right: 5rem;
-    padding-left: 1rem;
-  }
-  
-  .cabecalho-menu {
-    display: flex;
-    gap: 300px;
-  }
-  
-  .cabecalho-menu-item {
-    font-family: cursive, sans-serif;
-    color: rgb(116, 21, 21);
-    font-size: 1.2rem;
-    text-decoration: none;
-  }
-  
-  .cabecalho-menu-item:hover {
-    text-decoration: underline;
-    color: rgb(151, 25, 25);
-    cursor: pointer;
-    box-sizing: border-box;
-  }
