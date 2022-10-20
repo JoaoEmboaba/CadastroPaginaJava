@@ -18,7 +18,7 @@ app.use("/", (req, res) => {
 let messages = [];
 
 io.on("connection", (socket) => {
-  console.log("Um usuário se conectou");
+  console.log("Um usuário se conectou: \nID: ", socket.id);
 
   socket.emit('previousMessages', messages);
 
