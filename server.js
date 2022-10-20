@@ -20,19 +20,19 @@ let messages = [];
 io.on("connection", (socket) => {
   console.log("Um usuário se conectou");
 
-  socket.on("chat message", (msg) => {
-    socket.on("Nome", (nome) => {
-      socket.broadcast.emit(nome, msg);
-      io.emit(nome, msg);
-      console.log(nome + ": " + msg);
-    });
-  });
+  socket.emit('previousMessages', messages);
 
-  socket.on("mensagem", (data) => {
+  socket.on('sendMessage', (data) => {
     messages.push(data);
-    socket.broadcast.emit("mensagemRecebida", data);
+    socket.broadcast.emit('receivedMessage', data);
   });
 });
+
+/*socket.on("chat message", (msg) => {
+  socket.on("Nome", (nome) => {
+    console.log(nome + ": " + msg);
+  });
+});*/
 
 server.listen(3000, () => {
   console.log("Servidor conectado na porta 3000");

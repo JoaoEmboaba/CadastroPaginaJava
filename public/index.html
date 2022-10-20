@@ -25,12 +25,18 @@
         var socket = io();
 
         function renderMessage(message) {
-            $('.messages').append('<div class="message"><strong>' + nome.value + '</strong>: ' + input.value + '<div>');
-
+            $('.messages').append('<div class="message"><strong>' + message.author + '</strong>: ' + message.message + '<div>');
         }
 
-        socket.on('mensagem', function(message){
+        socket.on('previousMessages', function(messages) {
+            for(message of messages){
+                renderMessage(message);
+            }
+        });
+
+        socket.on('receivedMessage', function (message) {
             renderMessage(message);
+
         });
 
         var form = document.getElementById('chat');
@@ -40,11 +46,25 @@
         form.addEventListener('submit', function (e) {
             e.preventDefault();
 
+            var author = $('input[name=username]').val();
+            var message = $('input[name=message]').val();
+
+            if (author.length && message.length) {
+                var messageObject = {
+                    author: author,
+                    message: message,
+                };
+
+                renderMessage(messageObject);
+
+                socket.emit('sendMessage', messageObject);
+            }
+
             if (input.value) {
                 socket.emit('chat message', input.value);
                 socket.emit('Nome', nome.value);
 
-                renderMessage(nome + input);
+
             }
         });
 
