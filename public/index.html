@@ -5,22 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>s
+    <title>FAQ</title>
     <link rel="stylesheet" href="style.css">
-
-    <script src="/socket.io/socket.io.js"></script>
-    <script>
-        const socket = io();
-    </script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <form id="chat">
-        <input type="text" name="username" placeholder="digite o seu usuário">
+
+    <form id="chat" action="">
+        <input id="nome" type="text" name="username" placeholder="Digite o seu usuário">
         <div class="messages"></div>
-        <input type="text" name="message" placeholder="Digite a sua mensagem">
-        <button type="submit">Enviar</button>
+        <input id="entrada" type="text" name="message" placeholder="Digite a sua mensagem">
+        <button>Enviar</button>
     </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+
+        var socket = io();
+
+        function renderMessage(message) {
+            $('.messages').append('<div class="message"><strong>' + nome.value + '</strong>: ' + input.value + '<div>');
+
+        }
+
+        socket.on('mensagem', function(message){
+            renderMessage(message);
+        });
+
+        var form = document.getElementById('chat');
+        var input = document.getElementById('entrada');
+        var nome = document.getElementById('nome');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            if (input.value) {
+                socket.emit('chat message', input.value);
+                socket.emit('Nome', nome.value);
+
+                renderMessage(nome + input);
+            }
+        });
+
+    </script>
+
+</body>
 
 </html>
