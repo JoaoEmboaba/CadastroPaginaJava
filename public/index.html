@@ -11,13 +11,22 @@
 </head>
 
 <body>
-        <form id="chat" action="">
-            <h1>Converse comigo</h1>
-            <input id="nome" type="text" name="username" placeholder="Informe o seu nome">
-            <div class="messages"></div>
-            <input id="entrada" type="text" name="message" placeholder="Digite a sua dúvida">
-            <button>Enviar</button>
-        </form>
+    <div class="main-login">
+        <div class="left-login">
+            <form id="chat" action="">
+                
+                <input id="nome" type="text" name="username" placeholder="Informe o seu nome">
+                <div class="messages"></div>
+                <input id="entrada" type="text" name="message" placeholder="Digite a sua dúvida">
+                <button>Enviar</button>
+            </form>
+        </div>
+        <div class="right-login">
+            <h1>Converse comigo e<br> tire as suas dúvidas</h1>
+            <img src="duvida.svg">
+        </div>
+    </div>
+    </div>
     </div>
     <script src="/socket.io/socket.io.js"></script>
     <script>

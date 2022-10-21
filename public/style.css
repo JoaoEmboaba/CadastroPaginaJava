@@ -1,83 +1,165 @@
+html,
+body {
+  height: 100%;
+  background-color: #491f1f;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#chat {
+
+  margin-top: 1rem;
+  margin-left: 3rem;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 2vw;
+  width: 55vw;
+}
+
+input {
+  width: 50vw;
+  border: 1px solid #ddb4b4;
+  height: 5vw;
+  padding: 0 2vw;
+  font-size: 1.5vw;
+  border-radius: 2rem;
+  background-color: #ddb4b4;
+  padding: 1rem;
+  border-color: #ffe4c4;
+}
+
+input::placeholder {
+  color: rgb(105, 23, 23);
+  font-family: cursive;
+}
+
+button {
+  width: 50vw;
+  height: 5vw;
+  box-sizing: border-box;
+  font-size: 2rem;
+  background: #ddb4b4;
+  text-align: center;
+  font-family: cursive;
+  line-height: 5vw;
+  letter-spacing: 1rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 2vw;
+  border: none;
+  border-radius: 2rem;
+  color: rgb(105, 23, 23);
+  box-shadow: 0px 10px 60px -12px #ffe4c4;
+}
+
+button:hover {
+  background-color: #dfa6a6;
+  cursor: pointer;
+}
+
+.messages {
+  width: 50vw;
+  height: 40vw;
+  margin: 2vw 0;
+  border: 1px solid #ddd;
+  padding: 2vw;
+  border-radius: 2rem;
+  background-color: rgb(221, 180, 180);
+}
+
+.main-login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: thin;
+}
+
+.left-login {
+  width: 55vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-login > img {
+  margin: inherit;
+  width: 20vw;
+  width: 610px;
+  height: 600px;
+  transform: scaleX(-1);
+}
+
+.right-login > h1{
+
+  text-align: center;
+  width: 50vw;
+  height: 1vw;
+  padding: 0 2vw;
+  font-size: 2.5vw;
+  border-radius: 2rem;
+  padding: 1rem;
+  font-family: cursive;
+  color: #ddb4b4;
+}
+
+/*
+
 html, body {
-  background: linear-gradient(
-    -0deg,
-    rgb(218, 177, 125),
-    rgb(228, 181, 110),
-    #e0b682
-  );
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  #chat {
+  height: 100%;
+}
 
-    margin-top: 6rem;
-    height: 70vh;
-    width: 40vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-left: 1rem;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  h1{
-    font-family: cursive;
-    color: rgb(119, 25, 25);
-    margin-bottom: 2rem;
-    margin-left: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 0.5rem;
-  }
-  
-  input {
-    width: 40vw;
-    border: 1px solid rgb(129, 42, 42);
-    height: 50px;
-    margin-top: 0.1rem; 
-    padding: 1rem;
-    font-size: 14px;
-    border-radius: 2rem;
-    background-color: blanchedalmond;
-  }
+#chat {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-  input::placeholder{
+input {
+  width: 600px;
+  border: 1px solid #ddd;
+  height: 50px;
+  padding: 0 20px;
+  font-size: 14px;
+}
 
-    color: rgb(129, 42, 42);
-    font-weight: bold;
-  }
+button {
+  width: 600px;
+  height: 50px;
+  font-size: 14px;
+  background: #069;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  color: #FFF;
+  margin-top: 10px;
+}
 
-  button {
-    width: 40vw;
-    height: 50px;
-    font-size: 14px;
-    background: rgb(129, 42, 42);
-    text-align: center;
-    line-height: 50px;
-    font-weight: bold;
-    color: #FFF;
-    margin-top: 1rem;
-    border-radius: 2rem;
-    border-style: solid;
-  }
-  
-  .messages {
+.messages {
+  width: 600px;
+  height: 400px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
 
-    text-align: start;
-    width: 40vw;
-    height: 400px;
-    margin: 20px 0;
-    border: 1px solid #ddd;
-    padding: 10px 20px;
-    border-color: rgb(129, 42, 42);
-    border-radius: 2rem;
-    background-color: rgb(247, 220, 179);
-  }
-  
+*/
