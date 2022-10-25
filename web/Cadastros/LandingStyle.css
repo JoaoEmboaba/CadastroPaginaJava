@@ -5,7 +5,7 @@ body {
 }
 
 .BordaSuperior {
-  background-color:#ffe4c4;
+  background: rgb(32, 27, 44);
   padding-top: 1rem;
 }
 
@@ -19,26 +19,37 @@ body {
 }
 
 .cabecalho-imagem {
-  height: 62px;
-  padding-right: 5rem;
+  height: 30px;
+  padding-right: 3.5rem;
   padding-left: 1rem;
+  border: none;
+}
+
+header>button{
+
+  margin-left: 30rem;
+}
+
+#linha{
+
+  color: black;
 }
 
 .cabecalho-menu {
   display: flex;
-  gap: 100px;
+  gap: 50px;
 }
 
 .cabecalho-menu-item {
   font-family: cursive, sans-serif;
-  color: rgb(116, 21, 21);
-  font-size: 1.2rem;
+  color: #ffe4c4;
+  font-size: 1rem;
   text-decoration: none;
 }
 
 .cabecalho-menu-item:hover {
   text-decoration: underline;
-  color: rgb(151, 25, 25);
+  color: rgb(250, 217, 176);
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -48,16 +59,15 @@ body {
   height: 100vh;
   background: linear-gradient(
     -180deg,
-    rgb(116, 21, 21),
-    rgb(151, 25, 25),
-    rgb(63, 11, 11)
+    rgb(32, 27, 44),
+    rgb(24, 19, 34),
+    rgb(15, 11, 22)
   );
   display: flex;
   justify-content: center;
   align-items: center;
   border-width: thin;
 }
-
 *::-webkit-scrollbar {
   width: 10px;
 }
@@ -70,4 +80,22 @@ body {
   background-color: #ffe4c4;
   border-radius: 20px;
   border: 3px solid #f3cd9e;
+}
+
+.video{
+
+  border-radius: 1rem;
+}
+
+#linha{
+
+  border: none;
+  background-color: rgb(32, 27, 44);
+  color: #f3cd9e;
+}
+
+.botao{
+
+  margin-left: 30rem;
+  
 }
