@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+    <link rel="shortcut icon" href="java.png">
     <title>Cadastro</title>
     <style>
         body {
@@ -16,62 +16,59 @@
         }
 
         .BordaSuperior {
-
-            background: linear-gradient(-0deg, rgb(221, 188, 145), rgb(255, 235, 205), #ffe4c4);
+            background: rgb(32, 27, 44);
             padding-top: 1rem;
-        }
-
-        .cabecalho {
-
+          }
+          
+          .cabecalho {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
             padding-bottom: 15px;
             padding-right: 60rem;
-
-        }
-
-        .cabecalho-imagem {
-
-            height: 62px;
+          }
+          
+          .cabecalho-imagem {
+            height: 30px;
             padding-right: 5rem;
             padding-left: 1rem;
-        }
-
-        .cabecalho-menu {
-
+            border: none;
+          }
+          
+          .cabecalho-menu {
             display: flex;
             gap: 300px;
-        }
-
-        .cabecalho-menu-item {
-
+          }
+          
+          .cabecalho-menu-item {
             font-family: cursive, sans-serif;
-            color: rgb(116, 21, 21);
+            color: #ffe4c4;
             font-size: 1.2rem;
             text-decoration: none;
-        }
-
-        .cabecalho-menu-item:hover {
-
+          }
+          
+          .cabecalho-menu-item:hover {
             text-decoration: underline;
-            color: rgb(151, 25, 25);
+            color: rgb(250, 217, 176);
             cursor: pointer;
             box-sizing: border-box;
+          }
 
-        }
-
-        .main-login {
-
+          .main-login {
             width: 100vw;
             height: 100vh;
-            background: linear-gradient(-180deg, rgb(116, 21, 21), rgb(151, 25, 25), rgb(63, 11, 11));
+            background: linear-gradient(
+              -180deg,
+              rgb(32, 27, 44),
+              rgb(24, 19, 34),
+              rgb(15, 11, 22)
+            );
             display: flex;
             justify-content: center;
             align-items: center;
             border-width: thin;
-        }
+          }
 
         .card {
 
@@ -83,9 +80,9 @@
             flex-direction: column;
             margin-top: 1.5rem;
             padding: 30px 50px;
-            background: rgb(63, 11, 11);
+            background:  #1c142c;
             border-radius: 20px;
-            box-shadow: 0px 10px 40px rgb(65, 31, 31);
+            box-shadow: 0px 10px 40px rgb(64, 53, 92); 
 
         }
 
@@ -95,7 +92,7 @@
             border: none;
             padding: 15px;
             border-radius: 10px;
-            background: rgb(104, 42, 42);
+            background: rgb(32, 27, 44);
             color: antiquewhite;
             font-size: 12pt;
             margin-bottom: 0.5rem;
@@ -139,7 +136,7 @@
             text-transform: uppercase;
             font-weight: 800;
             letter-spacing: 3px;
-            color: rgb(63, 11, 11);
+            color: rgb(38, 30, 56);
             background: bisque;
             cursor: pointer;
             box-shadow: 0px 10px 40px -12px #ffe4c4;
@@ -233,7 +230,7 @@
     <div class="BordaSuperior">
         <header class="cabecalho">
             <img class="cabecalho-imagem"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="100" height="100"
+                src="java.png" width="100" height="100"
                 alt="imagem java" />
             <nav class="cabecalho-menu">
                 <a class="cabecalho-menu-item" href="landingPage.html">Inicio</a>
@@ -242,7 +239,7 @@
                 <a class="cabecalho-menu-item">Redes</a>
             </nav>
         </header>
-
+        <hr>
         <div class="main-login">
             <div class="card" id="floating">
 

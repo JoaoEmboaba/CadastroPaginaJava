@@ -1,9 +1,44 @@
+
 html,
 body {
-  height: 100%;
-  background-color: #491f1f;
-  overflow-x: hidden;
-  overflow-y: hidden;
+ 
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+#floating{
+
+  animation-name: floating;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+
+@keyframes floating {
+  0% {
+      transform: translate(0, 0px);
+  }
+
+  50% {
+      transform: translate(0, 15px);
+  }
+
+  100% {
+      transform: translate(0, -0px);
+  } 
 }
 
 * {
@@ -13,109 +48,154 @@ body {
 }
 
 #chat {
-
-  margin-top: 1rem;
-  margin-left: 3rem;
-  height: 100%;
+  margin-top: 0.1rem;
+  margin-bottom: 2rem;
+  height: 75%;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  padding: 2vw;
-  width: 55vw;
+
+}
+
+hr{
+
+  
 }
 
 input {
-  width: 50vw;
-  border: 1px solid #ddb4b4;
-  height: 5vw;
-  padding: 0 2vw;
-  font-size: 1.5vw;
+  width: 600px;
+  border: 1px solid rgb(19, 16, 16);
+  background: rgb(32, 27, 44);
+  height: 50px;
+  padding: 0 20px;
+  color: antiquewhite;
+  font-size: 14px;
   border-radius: 2rem;
-  background-color: #ddb4b4;
-  padding: 1rem;
-  border-color: #ffe4c4;
 }
 
-input::placeholder {
-  color: rgb(105, 23, 23);
-  font-family: cursive;
+input::placeholder{
+
+  color:antiquewhite;
 }
 
 button {
-  width: 50vw;
-  height: 5vw;
-  box-sizing: border-box;
-  font-size: 2rem;
-  background: #ddb4b4;
+  width: 600px;
+  height: 50px;
+  font-size: 14px;
+  background:bisque;
+  border: #ffe4c4;
   text-align: center;
-  font-family: cursive;
-  line-height: 5vw;
+  line-height: 50px;
   letter-spacing: 1rem;
+  font-size: 1.5rem;
+  font-family: cursive;
   font-weight: bold;
-  color: #fff;
-  margin-top: 2vw;
-  border: none;
+  color: rgb(32, 27, 44);
+  margin-top: 20px;
   border-radius: 2rem;
-  color: rgb(105, 23, 23);
-  box-shadow: 0px 10px 60px -12px #ffe4c4;
+  box-shadow: 0px 10px 40px -12px #ffe4c4;
 }
 
-button:hover {
-  background-color: #dfa6a6;
+button:hover{
+
+  background-color: #e4c8a8;
   cursor: pointer;
 }
 
 .messages {
-  width: 50vw;
-  height: 40vw;
-  margin: 2vw 0;
-  border: 1px solid #ddd;
-  padding: 2vw;
+  width: 600px;
+  height: 400px;
+  margin: 20px 0;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 2rem;
-  background-color: rgb(221, 180, 180);
+  padding: 20px;
+  color: #ffe4c4;
+}
+
+.BordaSuperior {
+  background: rgb(32, 27, 44);
+  padding-top: 1rem;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  padding-right: 60rem;
+}
+
+.cabecalho-imagem {
+  height: 30px;
+  padding-right: 5rem;
+  padding-left: 1rem;
+  border: none;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 300px;
+}
+
+h1{
+
+  color: #ffe4c4;
+  font-size: 3rem;
+  margin-bottom: 8rem;
+  margin-left: 6rem;
+}
+
+.cabecalho-menu-item {
+  font-family: cursive, sans-serif;
+  color: #ffe4c4;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.cabecalho-menu-item:hover {
+  text-decoration: underline;
+  color: rgb(250, 217, 176);
+  cursor: pointer;
+  box-sizing: border;
 }
 
 .main-login {
   width: 100vw;
   height: 100vh;
+  background: linear-gradient(
+    -180deg,
+    rgb(32, 27, 44),
+    rgb(24, 19, 34),
+    rgb(15, 11, 22)
+  );
   display: flex;
   justify-content: center;
   align-items: center;
   border-width: thin;
 }
 
-.left-login {
-  width: 55vw;
+.Direita-login {
+  width: 40vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.right-login > img {
-  margin: inherit;
-  width: 20vw;
-  width: 610px;
-  height: 600px;
-  transform: scaleX(-1);
-}
-
-.right-login > h1{
-
-  text-align: center;
+.Esquerda-login {
   width: 50vw;
-  height: 1vw;
-  padding: 0 2vw;
-  font-size: 2.5vw;
-  border-radius: 2rem;
-  padding: 1rem;
-  font-family: cursive;
-  color: #ddb4b4;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
+*/
 
 /*
-
 html, body {
   height: 100%;
 }
@@ -161,5 +241,4 @@ button {
   border: 1px solid #ddd;
   padding: 20px;
 }
-
 */
