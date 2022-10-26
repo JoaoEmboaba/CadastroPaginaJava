@@ -3,8 +3,74 @@ html,
 body {
  
     overflow-x: hidden;
-    overflow-y: hidden;
 
+}
+
+.botao {
+  font-family: cursive;
+  color: #ffe4c4;
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin-left: 55rem;
+  display: flex;
+  border: solid rgb(90, 77, 124);
+  border-width: thin;
+  padding: 9px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 40px rgb(58, 50, 80);
+}
+
+.botao:hover {
+  background-color: rgb(55, 48, 71);
+  color: #ffe4c4;
+}
+
+.botao-login:hover {
+  background-color: rgb(221, 188, 145);
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  padding-right: 60rem;
+}
+
+.cabecalho-imagem {
+  height: 30px;
+  padding-right: 5rem;
+  padding-left: 1rem;
+  border: none;
+  padding-bottom: 0.1rem  ;
+}
+
+#linha{
+
+  background-color: #f3cd9e;
+
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 100px;
+  margin-top: 0.1rem;
+}
+
+.cabecalho-menu-item {
+  font-family: cursive, sans-serif;
+  color: #ffe4c4;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin-top: 0.6rem;
+}
+
+.cabecalho-menu-item:hover {
+  text-decoration: underline;
+  color: rgb(250, 217, 176);
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
 .floating {
@@ -72,6 +138,7 @@ input {
   color: antiquewhite;
   font-size: 14px;
   border-radius: 2rem;
+  margin-top: 1.5rem;
 }
 
 input::placeholder{
@@ -83,7 +150,7 @@ button {
   width: 600px;
   height: 50px;
   font-size: 14px;
-  background:bisque;
+  background-clip:bisque;
   border: #ffe4c4;
   text-align: center;
   line-height: 50px;
@@ -105,7 +172,7 @@ button:hover{
 
 .messages {
   width: 600px;
-  height: 400px;
+  height: 200px;
   margin: 20px 0;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 2rem;
@@ -136,7 +203,12 @@ button:hover{
 
 .cabecalho-menu {
   display: flex;
-  gap: 300px;
+  gap: 50px;
+}
+
+#botao{
+
+  margin-left: 0.1rem;
 }
 
 h1{
@@ -161,41 +233,7 @@ h1{
   box-sizing: border;
 }
 
-.main-login {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(
-    -180deg,
-    rgb(32, 27, 44),
-    rgb(24, 19, 34),
-    rgb(15, 11, 22)
-  );
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-width: thin;
-}
 
-.Direita-login {
-  width: 40vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Esquerda-login {
-  width: 50vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-
-
-/*
 html, body {
   height: 100%;
 }
@@ -241,4 +279,3 @@ button {
   border: 1px solid #ddd;
   padding: 20px;
 }
-*/

@@ -83,7 +83,7 @@ body {
   height: 100vh;
   background: linear-gradient(
     -180deg,
-    rgb(32, 27, 44),
+    #201b2c,
     rgb(24, 19, 34),
     rgb(15, 11, 22)
   );
@@ -197,7 +197,7 @@ h1 {
   color: #ffe4c4;
   font-size: 1.1rem;
   text-decoration: none;
-  margin-left: 28rem;
+  margin-left: 22rem;
   display: flex;
   border: solid rgb(90, 77, 124);;
   border-width: thin;
