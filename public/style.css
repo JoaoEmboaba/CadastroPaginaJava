@@ -3,6 +3,7 @@ html,
 body {
  
     overflow-x: hidden;
+    overflow-y: hidden;
 
 }
 
@@ -27,50 +28,6 @@ body {
 
 .botao-login:hover {
   background-color: rgb(221, 188, 145);
-}
-
-.cabecalho {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 15px;
-  padding-right: 60rem;
-}
-
-.cabecalho-imagem {
-  height: 30px;
-  padding-right: 5rem;
-  padding-left: 1rem;
-  border: none;
-  padding-bottom: 0.1rem  ;
-}
-
-#linha{
-
-  background-color: #f3cd9e;
-
-}
-
-.cabecalho-menu {
-  display: flex;
-  gap: 100px;
-  margin-top: 0.1rem;
-}
-
-.cabecalho-menu-item {
-  font-family: cursive, sans-serif;
-  color: #ffe4c4;
-  font-size: 1.2rem;
-  text-decoration: none;
-  margin-top: 0.6rem;
-}
-
-.cabecalho-menu-item:hover {
-  text-decoration: underline;
-  color: rgb(250, 217, 176);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .floating {
@@ -122,11 +79,6 @@ body {
   align-items: center;
   flex-direction: column;
 
-}
-
-hr{
-
-  
 }
 
 input {
@@ -211,14 +163,6 @@ button:hover{
   margin-left: 0.1rem;
 }
 
-h1{
-
-  color: #ffe4c4;
-  font-size: 3rem;
-  margin-bottom: 8rem;
-  margin-left: 6rem;
-}
-
 .cabecalho-menu-item {
   font-family: cursive, sans-serif;
   color: #ffe4c4;
@@ -264,7 +208,7 @@ button {
   width: 600px;
   height: 50px;
   font-size: 14px;
-  background: #069;
+  background-color: rgb(58, 50, 80);
   text-align: center;
   line-height: 50px;
   font-weight: bold;
