@@ -11,27 +11,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
-<body>
+<>
     <div class="BordaSuperior">
-        <header class="cabecalho">
-            <img class="cabecalho-imagem" src="/web/Cadastros/image/java.png" width="200" height="200" alt="imagem java" />
-            <nav class="cabecalho-menu">
-                <a class="cabecalho-menu-item" href="/web/Cadastros/landingPage.html">Inicio</a>
-                <a class="botao" href="Cadastro.html">Entrar</a>
-                <a class="botao" id="botao" href="signUp.html">Cadastrar</a>
-            </nav>
-        </header>
-        <hr id="linha">
-        <div class="main-login">
-            <div class="Direita-login">
-                <form class="floating" id="chat" action="">
-                    <input id="nome" type="text" name="username" placeholder="Informe o seu nome">
-                    <div class="messages"></div>
-                    <input id="entrada" type="text" name="message" placeholder="Digite a sua dúvida">
-                    <button>Enviar</button>
-                </form>
-            </div>
-        </div>
+        <form class="floating" id="chat" action="">
+            <input id="nome" type="text" name="username" placeholder="Informe o seu nome">
+            <div class="messages"></div>
+            <input id="entrada" type="text" name="message" placeholder="Digite a sua dúvida">
+            <button>Enviar</button>
+        </form>
+    </div>
+    </div>
     </div>
     </div>
     <script src="/socket.io/socket.io.js"></script>
@@ -84,7 +73,6 @@
         });
 
     </script>
-
-</body>
+    </body>
 
 </html>

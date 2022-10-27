@@ -3,7 +3,7 @@ html,
 body {
  
     overflow-x: hidden;
-    overflow-y: hidden;
+    background-color:  rgb(32, 27, 44);
 
 }
 
@@ -21,14 +21,6 @@ body {
   box-shadow: 0px 10px 40px rgb(58, 50, 80);
 }
 
-.botao:hover {
-  background-color: rgb(55, 48, 71);
-  color: #ffe4c4;
-}
-
-.botao-login:hover {
-  background-color: rgb(221, 188, 145);
-}
 
 .floating {
   animation-name: floating;
@@ -81,39 +73,10 @@ body {
 
 }
 
-input {
-  width: 600px;
-  border: 1px solid rgb(19, 16, 16);
-  background: rgb(32, 27, 44);
-  height: 50px;
-  padding: 0 20px;
-  color: antiquewhite;
-  font-size: 14px;
-  border-radius: 2rem;
-  margin-top: 1.5rem;
-}
 
 input::placeholder{
 
   color:antiquewhite;
-}
-
-button {
-  width: 600px;
-  height: 50px;
-  font-size: 14px;
-  background-clip:bisque;
-  border: #ffe4c4;
-  text-align: center;
-  line-height: 50px;
-  letter-spacing: 1rem;
-  font-size: 1.5rem;
-  font-family: cursive;
-  font-weight: bold;
-  color: rgb(32, 27, 44);
-  margin-top: 20px;
-  border-radius: 2rem;
-  box-shadow: 0px 10px 40px -12px #ffe4c4;
 }
 
 button:hover{
@@ -126,36 +89,10 @@ button:hover{
   width: 600px;
   height: 200px;
   margin: 20px 0;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(247, 225, 180);
   border-radius: 2rem;
   padding: 20px;
   color: #ffe4c4;
-}
-
-.BordaSuperior {
-  background: rgb(32, 27, 44);
-  padding-top: 1rem;
-}
-
-.cabecalho {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 15px;
-  padding-right: 60rem;
-}
-
-.cabecalho-imagem {
-  height: 30px;
-  padding-right: 5rem;
-  padding-left: 1rem;
-  border: none;
-}
-
-.cabecalho-menu {
-  display: flex;
-  gap: 50px;
 }
 
 #botao{
@@ -163,29 +100,11 @@ button:hover{
   margin-left: 0.1rem;
 }
 
-.cabecalho-menu-item {
-  font-family: cursive, sans-serif;
-  color: #ffe4c4;
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-
-.cabecalho-menu-item:hover {
-  text-decoration: underline;
-  color: rgb(250, 217, 176);
-  cursor: pointer;
-  box-sizing: border;
-}
+button:hover{
 
 
-html, body {
-  height: 100%;
-}
+  background-color:  rgb(50, 42, 68);
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 #chat {
@@ -198,28 +117,39 @@ html, body {
 
 input {
   width: 600px;
-  border: 1px solid #ddd;
   height: 50px;
+  color: #e4c8a8;
+  border: 1px solid #ffe4c4;
+  background: rgb(32, 27, 44);
   padding: 0 20px;
+  border-radius: 2rem;
   font-size: 14px;
+  margin-top: 40px;
 }
 
 button {
   width: 600px;
   height: 50px;
   font-size: 14px;
-  background-color: rgb(58, 50, 80);
+  background-color: rgb(57, 50, 73);
+  border: #ffe4c4;
   text-align: center;
   line-height: 50px;
+  letter-spacing: 1rem;
+  font-size: 1.5rem;
+  font-family: cursive;
   font-weight: bold;
-  color: #FFF;
-  margin-top: 10px;
+  color: #ffe4c4;
+  margin-top: 30px;
+  border-radius: 2rem;
+  box-shadow: 0px 10px 40px -12px rgb(87, 73, 122);
 }
 
 .messages {
   width: 600px;
   height: 400px;
   margin: 20px 0;
-  border: 1px solid #ddd;
+  border: 1px solid #ffe4c4;
   padding: 20px;
+  box-shadow: 0px 10px 40px rgb(58, 50, 80);
 }
